@@ -81,3 +81,39 @@ jobs:
             aws_region: us-west-1
             function_name: m-s-links-link-d
             zip_file: m-s-links-link-d.zip          
+      - name: /links/{link_id}/tags get lambda deploy zip
+        uses: postman-open-technologies/links@main
+        with:
+            args: zip -qq -r m-s-links-link-tags-g.zip links/link_id/tags/get/index.js node_modules
+      - name: links get lambda deploy
+        uses: appleboy/lambda-action@master
+        with:
+            aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+            aws_region: us-west-1
+            function_name: m-s-links-link-tags-g
+            zip_file: m-s-links-link-tags-g.zip
+      - name: /links/{link_id}/tags post lambda deploy zip
+        uses: postman-open-technologies/links@main
+        with:
+            args: zip -qq -r m-s-links-link-tags-po.zip links/link_id/tags/post/index.js node_modules
+      - name: links get lambda deploy
+        uses: appleboy/lambda-action@master
+        with:
+            aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+            aws_region: us-west-1
+            function_name: m-s-links-link-tags-po
+            zip_file: m-s-links-link-tags-po.zip
+      - name: /links/{link_id}/tags/{tag_id} delete lambda deploy zip
+        uses: postman-open-technologies/links@main
+        with:
+            args: zip -qq -r m-s-links-link-tags-tag-d.zip links/link_id/tags/tag_id/delete/index.js node_modules
+      - name: links get lambda deploy
+        uses: appleboy/lambda-action@master
+        with:
+            aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+            aws_region: us-west-1
+            function_name: m-s-links-link-tags-tag-d
+            zip_file: m-s-links-link-tags-tag-d.zip            
