@@ -126,6 +126,6 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-linksbookmarklet-g
             zip_file: m-s-linksbookmarklet-g.zip              
