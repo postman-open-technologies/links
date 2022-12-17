@@ -1,0 +1,1277 @@
+{
+	"info": {
+		"_postman_id": "54087565-e32d-4e33-b8f8-efb8fbff5b38",
+		"name": "Llinks V1 - Documentation",
+		"description": "This is of the links API.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "12959542-54087565-e32d-4e33-b8f8-efb8fbff5b38"
+	},
+	"item": [
+		{
+			"name": "links",
+			"item": [
+				{
+					"name": "{link id}",
+					"item": [
+						{
+							"name": "tags",
+							"item": [
+								{
+									"name": "{tag id}",
+									"item": [
+										{
+											"name": "/links/:link_id/tags/:tag_id",
+											"id": "5fcefcbc-896d-4e82-a376-e7baf27f73a7",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"auth": {
+													"type": "apikey",
+													"apikey": [
+														{
+															"key": "key",
+															"value": "x-api-key",
+															"type": "string"
+														},
+														{
+															"key": "value",
+															"value": "<API Key>",
+															"type": "string"
+														},
+														{
+															"key": "in",
+															"value": "header",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/links/:link_id/tags/:tag_id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"links",
+														":link_id",
+														"tags",
+														":tag_id"
+													],
+													"variable": [
+														{
+															"key": "link_id",
+															"value": "veniam incididunt nulla",
+															"description": "(Required) "
+														},
+														{
+															"key": "tag_id",
+															"value": "veniam incididunt nulla",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "969438d2-fb74-48c7-ab62-f9e007aae13d",
+													"name": "204 response",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [
+															{
+																"description": "Added as a part of security scheme: apikey",
+																"key": "x-api-key",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/links/:link_id/tags/:tag_id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"links",
+																":link_id",
+																"tags",
+																":tag_id"
+															],
+															"variable": [
+																{
+																	"key": "link_id",
+																	"value": "veniam incididunt nulla",
+																	"description": "(Required) "
+																},
+																{
+																	"key": "tag_id",
+																	"value": "veniam incididunt nulla",
+																	"description": "(Required) "
+																}
+															]
+														}
+													},
+													"status": "No Content",
+													"code": 204,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"disabled": false,
+															"key": "Access-Control-Allow-Origin",
+															"value": "veniam incididunt nulla",
+															"description": ""
+														},
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										},
+										{
+											"name": "/links/:link_id/tags/:tag_id",
+											"id": "d5ccba82-8e00-4d06-936a-4e854605dcca",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "OPTIONS",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/links/:link_id/tags/:tag_id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"links",
+														":link_id",
+														"tags",
+														":tag_id"
+													],
+													"variable": [
+														{
+															"key": "link_id",
+															"value": "veniam incididunt nulla",
+															"description": "(Required) "
+														},
+														{
+															"key": "tag_id",
+															"value": "veniam incididunt nulla",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "96d459da-0fbd-4921-9922-a0e881a3678f",
+													"name": "200 response",
+													"originalRequest": {
+														"method": "OPTIONS",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/links/:link_id/tags/:tag_id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"links",
+																":link_id",
+																"tags",
+																":tag_id"
+															],
+															"variable": [
+																{
+																	"key": "link_id",
+																	"value": "veniam incididunt nulla",
+																	"description": "(Required) "
+																},
+																{
+																	"key": "tag_id",
+																	"value": "veniam incididunt nulla",
+																	"description": "(Required) "
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"disabled": false,
+															"key": "Access-Control-Allow-Origin",
+															"value": "veniam incididunt nulla",
+															"description": ""
+														},
+														{
+															"disabled": false,
+															"key": "Access-Control-Allow-Methods",
+															"value": "veniam incididunt nulla",
+															"description": ""
+														},
+														{
+															"disabled": false,
+															"key": "Access-Control-Allow-Headers",
+															"value": "veniam incididunt nulla",
+															"description": ""
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"name\": \"sed in reprehenderit Duis\",\n  \"version\": \"dolore fugiat exercitation tempor\",\n  \"description\": \"elit sed do\",\n  \"url\": \"dolor occaecat non voluptate\"\n}"
+												}
+											]
+										}
+									],
+									"id": "ee944210-f4a1-4481-98cf-ebf57b5e6188"
+								},
+								{
+									"name": "/links/:link_id/tags",
+									"id": "bc5b73b8-6eab-4896-bbe7-3b03b57598e5",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "apikey",
+											"apikey": [
+												{
+													"key": "key",
+													"value": "x-api-key",
+													"type": "string"
+												},
+												{
+													"key": "value",
+													"value": "<API Key>",
+													"type": "string"
+												},
+												{
+													"key": "in",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/links/:link_id/tags",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"links",
+												":link_id",
+												"tags"
+											],
+											"variable": [
+												{
+													"key": "link_id",
+													"value": "veniam incididunt nulla",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "cffcd840-b2f1-4110-8bfd-e7b90e386cc2",
+											"name": "200 response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "x-api-key",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/links/:link_id/tags",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"links",
+														":link_id",
+														"tags"
+													],
+													"variable": [
+														{
+															"key": "link_id",
+															"value": "veniam incididunt nulla",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"disabled": false,
+													"key": "Access-Control-Allow-Origin",
+													"value": "veniam incididunt nulla",
+													"description": ""
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"name\": \"dolor non cillum officia nisi\",\n    \"description\": \"nostrud cupidatat anim elit\"\n  },\n  {\n    \"name\": \"Excepteur\",\n    \"description\": \"deserunt sit incididunt proident\"\n  }\n]"
+										}
+									]
+								},
+								{
+									"name": "/links/:link_id/tags",
+									"id": "b8254dcf-6c33-4127-b56f-68abcb18bbbc",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "apikey",
+											"apikey": [
+												{
+													"key": "key",
+													"value": "x-api-key",
+													"type": "string"
+												},
+												{
+													"key": "value",
+													"value": "<API Key>",
+													"type": "string"
+												},
+												{
+													"key": "in",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"sed in reprehenderit Duis\",\n  \"version\": \"dolore fugiat exercitation tempor\",\n  \"description\": \"elit sed do\",\n  \"url\": \"dolor occaecat non voluptate\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/links/:link_id/tags",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"links",
+												":link_id",
+												"tags"
+											],
+											"variable": [
+												{
+													"key": "link_id",
+													"value": "veniam incididunt nulla",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "2b3f3f07-7617-46b0-8a7f-09b5f1ba2b5b",
+											"name": "201 response",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "x-api-key",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/links/:link_id/tags",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"links",
+														":link_id",
+														"tags"
+													],
+													"variable": [
+														{
+															"key": "link_id",
+															"value": "veniam incididunt nulla",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"disabled": false,
+													"key": "Access-Control-Allow-Origin",
+													"value": "veniam incididunt nulla",
+													"description": ""
+												},
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/links/:link_id/tags",
+									"id": "e5c21d92-0230-4ff9-83df-3320e286539d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "OPTIONS",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/links/:link_id/tags",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"links",
+												":link_id",
+												"tags"
+											],
+											"variable": [
+												{
+													"key": "link_id",
+													"value": "veniam incididunt nulla",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "822248be-35cd-4dac-b79f-463a3d412422",
+											"name": "200 response",
+											"originalRequest": {
+												"method": "OPTIONS",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/links/:link_id/tags",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"links",
+														":link_id",
+														"tags"
+													],
+													"variable": [
+														{
+															"key": "link_id",
+															"value": "veniam incididunt nulla",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"disabled": false,
+													"key": "Access-Control-Allow-Origin",
+													"value": "veniam incididunt nulla",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "Access-Control-Allow-Methods",
+													"value": "veniam incididunt nulla",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "Access-Control-Allow-Headers",
+													"value": "veniam incididunt nulla",
+													"description": ""
+												},
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "e3074f6b-583b-40ae-85ca-9feaff42b63a"
+						},
+						{
+							"name": "/links/:link_id",
+							"id": "15875e25-f63c-4401-8d1d-83f71db9fa9a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "x-api-key",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "<API Key>",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/links/:link_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"links",
+										":link_id"
+									],
+									"variable": [
+										{
+											"key": "link_id",
+											"value": "veniam incididunt nulla",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "e6e2fa10-d8f0-4ce7-8a72-078813955a18",
+									"name": "200 response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "x-api-key",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/links/:link_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"links",
+												":link_id"
+											],
+											"variable": [
+												{
+													"key": "link_id",
+													"value": "veniam incididunt nulla",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"disabled": false,
+											"key": "Access-Control-Allow-Origin",
+											"value": "veniam incididunt nulla",
+											"description": ""
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"name\": \"sed in reprehenderit Duis\",\n  \"version\": \"dolore fugiat exercitation tempor\",\n  \"description\": \"elit sed do\",\n  \"url\": \"dolor occaecat non voluptate\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/links/:link_id",
+							"id": "648835f9-6f68-41b3-9045-d6de17b8dc98",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "x-api-key",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "<API Key>",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"sed in reprehenderit Duis\",\n  \"version\": \"dolore fugiat exercitation tempor\",\n  \"description\": \"elit sed do\",\n  \"url\": \"dolor occaecat non voluptate\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/links/:link_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"links",
+										":link_id"
+									],
+									"variable": [
+										{
+											"key": "link_id",
+											"value": "veniam incididunt nulla",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "d47b797a-0f03-4ac2-8362-5638f7fdda28",
+									"name": "204 response",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "x-api-key",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/links/:link_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"links",
+												":link_id"
+											],
+											"variable": [
+												{
+													"key": "link_id",
+													"value": "veniam incididunt nulla",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"disabled": false,
+											"key": "Access-Control-Allow-Origin",
+											"value": "veniam incididunt nulla",
+											"description": ""
+										},
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/links/:link_id",
+							"id": "63f18d6b-27d4-4142-80f2-3110bbb976d4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "x-api-key",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "<API Key>",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/links/:link_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"links",
+										":link_id"
+									],
+									"variable": [
+										{
+											"key": "link_id",
+											"value": "veniam incididunt nulla",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "481baed1-c534-4252-a0af-e6a2829dbaa7",
+									"name": "204 response",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "x-api-key",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/links/:link_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"links",
+												":link_id"
+											],
+											"variable": [
+												{
+													"key": "link_id",
+													"value": "veniam incididunt nulla",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"disabled": false,
+											"key": "Access-Control-Allow-Origin",
+											"value": "veniam incididunt nulla",
+											"description": ""
+										},
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/links/:link_id",
+							"id": "edfaf333-ab4f-498e-92ca-37527174ae47",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/links/:link_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"links",
+										":link_id"
+									],
+									"variable": [
+										{
+											"key": "link_id",
+											"value": "veniam incididunt nulla",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "7cc6917f-40cd-4dd2-b26d-40ac58bf0a18",
+									"name": "200 response",
+									"originalRequest": {
+										"method": "OPTIONS",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/links/:link_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"links",
+												":link_id"
+											],
+											"variable": [
+												{
+													"key": "link_id",
+													"value": "veniam incididunt nulla",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"disabled": false,
+											"key": "Access-Control-Allow-Origin",
+											"value": "veniam incididunt nulla",
+											"description": ""
+										},
+										{
+											"disabled": false,
+											"key": "Access-Control-Allow-Methods",
+											"value": "veniam incididunt nulla",
+											"description": ""
+										},
+										{
+											"disabled": false,
+											"key": "Access-Control-Allow-Headers",
+											"value": "veniam incididunt nulla",
+											"description": ""
+										},
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "89609580-6a9a-4263-9e8b-1c37cd1734ef"
+				},
+				{
+					"name": "/links",
+					"id": "d4d36c06-4bc1-4b09-a71a-a07947a88436",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/links?limit=100&page=0",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"links"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "veniam incididunt nulla",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "fa514db9-865b-4230-b298-fa799c7e5484",
+							"name": "200 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "x-api-key",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/links?search=veniam incididunt nulla&limit=veniam incididunt nulla&page=veniam incididunt nulla",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"links"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "veniam incididunt nulla"
+										},
+										{
+											"key": "limit",
+											"value": "veniam incididunt nulla"
+										},
+										{
+											"key": "page",
+											"value": "veniam incididunt nulla"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"disabled": false,
+									"key": "Access-Control-Allow-Origin",
+									"value": "veniam incididunt nulla",
+									"description": ""
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"name\": \"fugiat voluptate sed occaecat\",\n    \"version\": \"aute\",\n    \"description\": \"officia Lorem\",\n    \"url\": \"labore qui quis ut\"\n  },\n  {\n    \"name\": \"proident consequat culpa\",\n    \"version\": \"in irure labore Excepteur tempor\",\n    \"description\": \"amet sunt pariatur ad\",\n    \"url\": \"aute fugiat ea veniam Lorem\"\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "/links",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e2e8d586-01a8-4fb6-81b7-7903cbbae0ea",
+								"exec": [
+									"var links = JSON.parse(pm.environment.get(\"links\"));",
+									"",
+									"var p = {};",
+									"for( var i = 0; i < links.length; i++){ ",
+									"    if(i!=0){",
+									"        p.name = links[i]['name'];",
+									"        p.description = links[i]['description'];",
+									"        p.url = links[i]['url'];",
+									"        p.image = links[i]['image'];",
+									"    }",
+									"}",
+									"",
+									"pm.environment.set(\"link\", JSON.stringify(p));"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "acc73b64-1754-4da1-9caf-44c75f2e0f84",
+								"exec": [
+									"var links = JSON.parse(pm.environment.get(\"links\"));",
+									"var link = JSON.parse(pm.environment.get(\"link\"));",
+									"",
+									"var new_links = [];",
+									"for( var i = 0; i < links.length; i++){ ",
+									"    if(links[i].name != link.name){",
+									"        new_links.push(links[i]);",
+									"    }",
+									"}",
+									"",
+									"pm.environment.set(\"links\", JSON.stringify(new_links));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "b0d0c0c1-596b-4c06-b72a-0dce1e89bd14",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{{link}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/links",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"links"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "ce5f1d41-39c9-4104-9104-91316b7ca8bb",
+							"name": "201 response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "x-api-key",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/links",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"links"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"disabled": false,
+									"key": "Access-Control-Allow-Origin",
+									"value": "veniam incididunt nulla",
+									"description": ""
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"name\": \"sed in reprehenderit Duis\",\n  \"version\": \"dolore fugiat exercitation tempor\",\n  \"description\": \"elit sed do\",\n  \"url\": \"dolor occaecat non voluptate\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/links",
+					"id": "b7ff51af-f7d7-4803-8f17-81710cdbd38b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/links",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"links"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "54dc28c5-3818-4d97-8d88-583fd60fb1e8",
+							"name": "200 response",
+							"originalRequest": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/links",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"links"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"disabled": false,
+									"key": "Access-Control-Allow-Origin",
+									"value": "veniam incididunt nulla",
+									"description": ""
+								},
+								{
+									"disabled": false,
+									"key": "Access-Control-Allow-Methods",
+									"value": "veniam incididunt nulla",
+									"description": ""
+								},
+								{
+									"disabled": false,
+									"key": "Access-Control-Allow-Headers",
+									"value": "veniam incididunt nulla",
+									"description": ""
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"id": "eb7d44f2-32db-4fa4-ab53-148fd230bb69"
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{api_key}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e64c62b4-323a-4963-8089-fd45e5624c6b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6e721d6e-c773-4755-9de3-ca8d76a57324",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
