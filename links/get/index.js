@@ -20,35 +20,36 @@ exports.handler = vandium.generic()
     if(event.tags){
       tags = event.tags;
     }   
-    
-    var role = 0;
-    if(event.role){
-      role = event.role;
-    }       
-    
+
     var page = 0;
     if(event.page){
       page = event.page;
     }
     
-    var limit = 5;
+    var limit = 50;
     if(event.limit){
       limit = event.limit;
     }   
-    if(limit > 25){
-      limit = 25;
+    if(limit > 1000){
+      limit = 1000;
     }
 
-    var sql = "SELECT * FROM links b WHERE id IS NOT NULL";
+    var sql = "SELECT * FROM links b WHERE ID IS NOT NULL";
     if(search != ''){
        sql += " AND b.name LIKE '%" + search + "%'";
     }
-    if(role != ''){
-       sql += " AND id IN(SELECT link_id FROM links_roles WHERE role_id IN(SELECT id FROM roles WHERE name = '" + role + "'))";
-    }   
+
     if(tags != ''){
-       sql += " AND id IN(SELECT link_id FROM links_tags WHERE tag_id IN(SELECT id FROM tags WHERE name IN ('" + tags.replace(",","','") + "')))";
-    }     
+      
+       var tag_array = tags.split(',');
+       for (let i = 0; i < tag_array.length; i++) {
+         sql += " AND id IN(SELECT link_id FROM links_tags WHERE tag_id IN(SELECT id FROM tags WHERE name = '" + tag_array[i] + "'))";
+        if(i<tag_array.length-1){
+          sql += ' AND';
+        }      
+       }
+    }  
+    
     sql += " ORDER BY name";
     sql += " LIMIT " + page + "," + limit;
     connection.query(sql, function (error, results, fields) {

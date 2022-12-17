@@ -11,6 +11,7 @@ exports.handler = vandium.generic()
     database : process.env.database
     });
 
+    if(event.name && event.name != ''){
     var sql = 'INSERT INTO links(';
     
     var total_properties = Object.keys(event).length;
@@ -48,4 +49,11 @@ exports.handler = vandium.generic()
       callback( null, response );
 
     });
+    }
+    else{
+      var response = {};
+      response['id'] = 0;
+      response['name'] = 'No Name';
+      callback( null, response );
+    }
 });
